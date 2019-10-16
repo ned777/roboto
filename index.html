@@ -7,8 +7,7 @@
 
 
 <script> 
-////////////////////////////////////
-// NAVIGATION SHOW/HIDE
+ $(document).ready(function() {
 
 $("nav ul").hide();
 
@@ -20,8 +19,7 @@ $("nav ul li a, .brand a").click( function() {
   $("nav ul").hide();
 });
 
-////////////////////////////////////
-// SMOOTH SCROLLING WITH NAV HEIGHT OFFSET
+
 
 $(function() {
   var navHeight = $("nav").outerHeight();
@@ -39,8 +37,7 @@ $(function() {
   });
 });
 
-////////////////////////////////////
-// NAVIGATION STICKY
+
 
 var viewHeight = $(window).height();
 var navigation = $('nav');
@@ -53,8 +50,7 @@ $(window).scroll( function() {
   }
 });
 
-////////////////////////////////////////////////
-// MAKE THE SPLASH CONTAINER VERTICALLY CENTERED
+
 
 function centerSplash() {
   var navHeight = $("nav").outerHeight();
@@ -70,6 +66,7 @@ $( document ).ready( function() {
 $( window ).resize( function() {
   centerSplash();
 });
+});  
 
 </script>
 
@@ -97,9 +94,7 @@ img {
   max-width: 100%;
 }
 
-/* ========================
-Global
-======================== */
+
 
 body {
   color: #444;
